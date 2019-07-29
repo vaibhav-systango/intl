@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "extract-messages": "NODE_ENV=production babel ./src  --out-file /dev/null" 
+    "extract-messages": "NODE_ENV=production babel ./src --extensions '.ts' --extensions '.tsx'  --out-file /dev/null"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,6 +39,7 @@
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
+    "@babel/preset-typescript": "^7.3.3",
     "babel-plugin-react-intl": "^4.1.3"
   }
 }
