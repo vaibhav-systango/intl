@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import {FormattedMessage} from 'react-intl';
 import './App.css';
 
 const App: React.FC = () => {
@@ -16,7 +17,10 @@ const App: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          <FormattedMessage id="app.learn-react-link"
+            defaultMessage="Learn React"
+            description="Link on react page"
+          />
         </a>
       </header>
     </div>
