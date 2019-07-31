@@ -1,8 +1,8 @@
 {
-    "presets": ["react-app"],
+    "presets": ["react-app", "@babel/preset-typescript"],
     "plugins": [
         [ "react-intl", {
-            "messagesDir": "./src/i18n/messages",
+            "messagesDir": "./lang",
             "extractSourceLocation": true
         }]
     ]
